@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="icons/css/all.min.css">
+
+</head>
+<body>
+<div class="container">
+    
+    <header>
+         <h1><u> donta Store</u></h1>
+        <p>product management system</p>
+
+    </header>
+    <hr>
+
+    <div class="arrow" id="arrow"><i class="fa-solid fa-arrow-up"></i></div>
+    <div class="inputss">
+        <form action="inputs" class="form">
+            <input class="b1  bot2  foucs" type="text" id="title" placeholder=" titel">
+
+                <div class="total-price" >
+                    <input onkeyup="getTotal()" class="n10  bot1 foucs" type="number" id="price" placeholder=" price" >
+                    <input onkeyup="getTotal()" class="n10  bot1 foucs" type="number" id="taxes" placeholder=" taxes">
+                    <input onkeyup="getTotal()" class="n10  bot1 foucs" type="number" id="ads" placeholder=" ads">
+                    <input onkeyup="getTotal()" class="n10  bot1 foucs" type="number" id="discount" placeholder=" discount">
+                                <div id="total" class="bot1" style="display: flex; align-items: center;justify-content: start;"></div>
+
+                </div>
+                <div style="width: 100%;display: flex;flex-direction: column;align-items: center;">
+                    <input class="b1  bot2 foucs" type="number" id="count" value="1" placeholder=" count ( 1 : 100 )">
+                    <input  class="b1  bot2 foucs" type="text" id="category" placeholder=" category">
+                    <input type="button" value="create" id="create" class="botom b1  bot2">
+                    <input onkeyup="searchByData(this.value)" class="b1  bot2 foucs" type="search" id="search" placeholder=" search">
+                </div>
+                <div class="searchs">
+                    <input onclick="getsearch (this.id)" type="button" id="searchByTitle" value="search by title" class="botom b1  bot3">
+                    <input onclick="getsearch (this.id)" type="button" id="searchByCategory" value="search by category" class="botom b1  bot3">
+                </div>
+                <input onclick="clickdelete()" type="button"  id="deletall" class="botom b1  bot2 " style="background: red;" >
+
+
+        </form>
+       
+    </div>
+    <br><br>
+        <div class="deletall " id="deletallDiv">
+
+        </div>
+        <table>
+            <tr class="t1r" >
+
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th> 
+                <th>total</th>
+                <th>category</th>
+                <th >update</th>
+                <th>delete</th>
+    
+            </tr>
+           <tbody id="tbody">
+            <!-- <tr >
+                <td>1</td>
+                <td>iphone</td>
+                <td>2000</td>
+                <td>1244</td>
+                <td>3423</td>
+                <td>10</td>
+                <td>phone</td>
+                <td>phone</td>
+                <td><button id="update" class="botom b4">update</button></td>
+                <td><button id="delete" class="botom b4">delete</button></td>
+    
+            </tr> -->
+         
+           </tbody>
+        </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+  
+  
+  <!-- Rounded switch -->
+  
+  
+
+  
+  
+  
+  
+  
+ 
+  
+</body>
+</html>
